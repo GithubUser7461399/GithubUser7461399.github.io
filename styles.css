@@ -153,6 +153,20 @@ body {
     border-color: #558;
 }
 
+#Homebtn {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: auto;
+    border-radius: 0 20px 20px;
+}
+
+#Homebtn:hover {
+    background-color: #558;
+}
+
 .Top {
     position: fixed;
     top: 0;
@@ -186,6 +200,10 @@ body {
 
 .Navbar li:hover {
     background-color: gray;
+}
+
+#Tiny .Navbar li:hover {
+    background-color: #558;
 }
 
 .Contents {
