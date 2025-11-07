@@ -142,7 +142,15 @@ body {
     background-color: white;
 }
 #Tiny {
+    background-color: #338;
     font-family: "IBM Plex Mono";
+}
+
+#Tiny .Top {
+    background-color: #338;
+    border-style: solid;
+    border-width: 0 0 4px 0;
+    border-color: #558;
 }
 
 .Top {
@@ -206,9 +214,10 @@ section {
     border-radius: 0;
     background: #FFF;
     box-shadow: 5px 5px 10px #000000;
-
-
-
+}
+#Tiny section {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    box-shadow: 25px 25px 50px #0000002d;
 }
 footer {
     margin: 25px;
