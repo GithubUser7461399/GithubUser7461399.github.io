@@ -141,6 +141,9 @@ body {
 #Paper {
     background-color: white;
 }
+#Tiny {
+    font-family: "IBM Plex Mono";
+}
 
 .Top {
     position: fixed;
