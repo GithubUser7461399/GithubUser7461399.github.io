@@ -127,30 +127,8 @@ body {
 
     margin: 0;
     text-align: center;
-}
-#Sandy {
-    background-color: beige;
-}
-#Ghost {
-    background-color: #222222;
-    color: #FFF;
-}
-#Aero {
-    background: linear-gradient(rgb(38, 38, 255), rgb(145, 220, 255));
-}
-#Paper {
-    background-color: white;
-}
-#Tiny {
     background-color: #338;
     font-family: "IBM Plex Mono";
-}
-
-#Tiny .Top {
-    background-color: #338;
-    border-style: solid;
-    border-width: 0 0 4px 0;
-    border-color: #558;
 }
 
 #Homebtn {
@@ -172,8 +150,11 @@ body {
     top: 0;
     width: 100%;
     height: auto;
-    background-color: black;
     color: white;
+    background-color: #338;
+    border-style: solid;
+    border-width: 0 0 4px 0;
+    border-color: #558;
 }
 
 .Navbar {
@@ -199,10 +180,6 @@ body {
 }
 
 .Navbar li:hover {
-    background-color: gray;
-}
-
-#Tiny .Navbar li:hover {
     background-color: #558;
 }
 
@@ -214,143 +191,16 @@ section {
     min-height: 100vh;
     margin: 25px;
     border-radius: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    box-shadow: 25px 25px 50px #0000002d;
 }
 
-#Sandy section {
-    background: linear-gradient(rgb(94, 219, 171, 0.5), rgb(61, 206, 157, 0.5), rgb(154, 214, 186, 0.5));
-    box-shadow: 25px 25px 25px #9fcfbd;
-}
-#Ghost section {
-    background: linear-gradient(rgb(64, 64, 64), rgba(0, 0, 0));
-    box-shadow: 25px 25px 50px #000000;
-}
-#Aero section {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-    box-shadow: 25px 25px 50px #0000002d;
-}
-#Paper section {
-    border-radius: 0;
-    background: #FFF;
-    box-shadow: 5px 5px 10px #000000;
-}
-#Tiny section {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-    box-shadow: 25px 25px 50px #0000002d;
-}
 footer {
     margin: 25px;
     height: 10vh;
 }
 
-.Art-frame {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    padding: 0;
-    border-radius: 1px;
-    border-color: black;
-    border-style: solid;
-    display: grid;
-    grid-template-columns: repeat(10, 10%);
-    grid-template-rows: repeat(10, 10%);
-}
+@media screen and (max-device-width: 500px) {
+    /* Code in here only applies to screens equal or less than 500 pixels wide */
 
-.Art-frame div {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.Fruitiger-holder {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 50%;
-    /* background-image: url(../../../Pictures/wallpapers/denis-istomin-sky-110517-b-v2-2-f.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-}
-
-
-#Fruitiger-bubble {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    margin: 0 auto;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0));
-}
-
-#Fruitiger-bubble #Reflection {
-    height: 50%;
-    width: 70%;
-    margin: 0 auto;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.0));
-}
-
-.User-icon-holder {
-    width: 150px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 50% 50% 30% 30%;
-}
-
-
-#User-icon-body {
-    height: 100%;
-    width: 100%;
-    border-radius: 50% 50% 30% 30%;
-    margin: 0 auto;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0));
-}
-
-#User-icon-body #Reflection {
-    height: 50%;
-    width: 70%;
-    margin: 0 auto;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.0));
-}
-
-
-#white {
-    background-color: #FFF; /* Red */
-}
-
-#black {
-    background-color: #000;
-}
-
-#red {
-    background-color: #F00; /* Red */
-}
-
-#blue {
-    background-color: #00F; /* Blue */
-}
-
-#green {
-    background-color: #0F0; /* Green */
-}
-
-#yellow {
-    background-color: #FF0; /* Yellow */
-}
-
-#magenta {
-    background-color: #F0F; /* Orange */
-}
-
-#cyan {
-    background-color: #0FF; /* Purple */
-}
-
-#grey {
-    background-color: #AAA; /* Purple */
-}
-
-#transparent {
-    background-color: transparent; /* Transparent */
-}
+  }
