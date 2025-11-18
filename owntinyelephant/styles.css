@@ -130,7 +130,7 @@ body {
     background-color: #338;
     font-family: "IBM Plex Mono";
 }
-
+/*
 #Homebtn {
     z-index: 10;
     position: fixed;
@@ -144,7 +144,7 @@ body {
 #Homebtn:hover {
     background-color: #558;
 }
-
+*/
 .Top {
     position: fixed;
     top: 0;
@@ -200,7 +200,13 @@ footer {
     height: 10vh;
 }
 
-@media screen and (max-device-width: 500px) {
+@media screen and (max-device-width: 700px) {
     /* Code in here only applies to screens equal or less than 500 pixels wide */
-
+    section {
+        margin: auto;
+        width: 100%;
+    };
+    h1 {
+        font-size: 18px;
+    }
   }
