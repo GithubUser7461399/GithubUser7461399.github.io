@@ -146,11 +146,12 @@ body {
 }
 */
 .Top {
+    z-index: 10;
     position: fixed;
     top: 0;
     width: 100%;
     height: auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background:#ff0000;
 }
 
@@ -171,9 +172,10 @@ body {
 
 .Navbar li a {
     display: block;
+    font-weight: 700;
     margin: 0;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .Navbar li:hover {
@@ -185,13 +187,20 @@ body {
     margin: 150px 50px;
 }
 
+.banner {
+    background-image: url("https://4vector.com/i/free-vector-beautiful-christmas-banner-banner-vector_026126_christmas_banners.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
 section {
-    min-height: 50vh;
+    display: flex;
     padding: 25px;
     margin: 25px;
     border-radius: 25px;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     box-shadow: 25px 25px 50px #0000002d;
+    justify-content: space-between;
 }
 
 footer {
@@ -237,7 +246,28 @@ footer {
 }
 
 .gallery-item {
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 5px;
+}
 
+.gallery-item img {
+    width: 250px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 25px 25px 50px #0000002d;
+}
+
+.gallery-item img:hover {
+    opacity: 50%;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    color: black;
+    transition: 0.3s;
 }
 
 @media screen and (max-device-width: 700px) {
