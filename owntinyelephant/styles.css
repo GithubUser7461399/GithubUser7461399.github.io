@@ -127,7 +127,7 @@ body {
 
     margin: 0;
     text-align: center;
-    background-color: #338;
+    background-color: #fcf7ff;
     font-family: "IBM Plex Mono";
 }
 /*
@@ -150,11 +150,8 @@ body {
     top: 0;
     width: 100%;
     height: auto;
-    color: white;
-    background-color: #338;
-    border-style: solid;
-    border-width: 0 0 4px 0;
-    border-color: #558;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(#ffffff, #ffffff77);
 }
 
 .Navbar {
@@ -176,7 +173,7 @@ body {
     display: block;
     margin: 0;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 .Navbar li:hover {
@@ -206,24 +203,23 @@ footer {
     float: left;
 }
 .right {
-    width: 50%;
     float: right;
 }
 
 .right h1 {
-    position: relative;
-    right: 0;
-    top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .right img {
     height: 50vh;
     float: right;
     border-radius: 25px;
-    background-color: #558;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #558;
+    border-radius: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    box-shadow: 25px 25px 50px #0000002d;
 }
 
 .right img:hover {
