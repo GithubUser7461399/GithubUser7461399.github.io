@@ -151,7 +151,7 @@ body {
     width: 100%;
     height: auto;
     color: rgb(0, 0, 0);
-    background: linear-gradient(#ffffff, #ffffff77);
+    background:#ff0000;
 }
 
 .Navbar {
@@ -177,7 +177,8 @@ body {
 }
 
 .Navbar li:hover {
-    background-color: #558;
+    background-color: #cc0000;
+    transition: 0.3s;
 }
 
 .Contents {
@@ -204,6 +205,9 @@ footer {
 }
 .right {
     float: right;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .right h1 {
@@ -222,8 +226,18 @@ footer {
     box-shadow: 25px 25px 50px #0000002d;
 }
 
+.right:hover {
+    color: black;
+    transition: 0.3s;
+
+}
 .right img:hover {
     opacity: 50%;
+    transition: 0.3s;
+}
+
+.gallery-item {
+
 }
 
 @media screen and (max-device-width: 700px) {
