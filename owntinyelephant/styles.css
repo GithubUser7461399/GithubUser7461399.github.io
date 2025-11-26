@@ -131,20 +131,16 @@ body {
     font-family: "IBM Plex Mono";
 }
 /*
-#Homebtn {
-    z-index: 10;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 80px;
-    height: auto;
-    border-radius: 0 20px 20px;
-}
-
-#Homebtn:hover {
-    background-color: #558;
+button {
+    background: none;        
+    border: none;            
+    padding: 0;            
+    font: inherit;           
+    color: inherit;          
+    cursor: pointer;         
 }
 */
+
 .Top {
     z-index: 10;
     position: fixed;
@@ -276,10 +272,11 @@ footer {
 }
 
 .dropbtn {
-    border: none;
-    width: 100%;
-    display: flex;
-    background-color: #ff0000;
+    display: none;
+}
+
+.droptoggle {
+    display: none;
 }
 
 @media screen and (max-device-width: 700px) {
@@ -293,6 +290,9 @@ footer {
     h1 {
         font-size: 18px;
     }
+    .Navbar {
+        display: none;
+    }
     .Navbar li {
         display: none;
         margin: 0 auto;
@@ -300,25 +300,22 @@ footer {
         background-color: #ff0000;
     }
     .dropbtn {
+        width: 100%;
         display: block;
         margin: 0 auto;
         justify-content: center;
-        height: 50px;
+        padding: 18px 0;
+        cursor: pointer;
     }
 
-    .dropbtn:active .Navbar li, .Navbar, .dropbtn {
+    .Top .droptoggle:checked + .dropbtn + .Navbar, .Navbar li {
         display: block;
         width: 100%;
         height: auto;
     }
-    .dropbtn:hover .Navbar li, .Navbar, .dropbtn {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+
     .dropbtn:hover {
         background-color: #cc0000;
-        transition: 0.3s;
     }
     .gallery-item {
         width: 100%;
