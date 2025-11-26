@@ -191,16 +191,18 @@ body {
     background-image: url("https://4vector.com/i/free-vector-beautiful-christmas-banner-banner-vector_026126_christmas_banners.jpg");
     background-size: cover;
     color: #ffffff;
+    height: fit-content;
 }
 
 section {
     display: flex;
+    flex-wrap: wrap;
     padding: 25px;
     margin: 25px;
     border-radius: 25px;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     box-shadow: 25px 25px 50px #0000002d;
-    justify-content: space-between;
+    justify-content: space-evenly
 }
 
 footer {
@@ -209,10 +211,12 @@ footer {
 }
 
 .left {
-    width: 50%;
+    width: calc(50% - 25px);
     float: left;
 }
 .right {
+    width: calc(50% - 25px);
+    height: 300px;
     float: right;
     position: relative;
     text-align: center;
@@ -227,8 +231,9 @@ footer {
 }
 
 .right img {
-    height: 50vh;
-    float: right;
+    width: 300px;
+    height: auto;
+    float: none;
     border-radius: 25px;
     border-radius: 25px;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
@@ -278,7 +283,7 @@ footer {
 @media screen and (max-device-width: 700px) {
     /* Code in here only applies to screens equal or less than 500 pixels wide */
     section {
-        margin: auto;
+        display: block;
     };
     h1 {
         font-size: 18px;
@@ -303,5 +308,23 @@ footer {
     .dropbtn:hover {
         background-color: #cc0000;
         transition: 0.3s;
+    }
+    .gallery-item {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .left {
+        width: 100%;
+        float: none;
+    }
+    .right {
+        width: 100%;
+        float: none;
+        height: fit-content;
+    }
+    .right img {
+        width: 100%;
+        margin: 0 auto;
     }
   }
