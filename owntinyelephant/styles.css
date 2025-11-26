@@ -255,7 +255,7 @@ footer {
     height: 300px;
     border-radius: 25px;
     display: inline-block;
-    margin: 5px;
+    margin: 50px;
 }
 
 .gallery-item img {
@@ -284,6 +284,9 @@ footer {
     /* Code in here only applies to screens equal or less than 500 pixels wide */
     section {
         display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px 0;
     };
     h1 {
         font-size: 18px;
@@ -300,11 +303,7 @@ footer {
         justify-content: center;
         height: 50px;
     }
-    .dropbtn:hover .Navbar li, .Navbar, .dropbtn {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+
     .dropbtn:active .Navbar li, .Navbar, .dropbtn {
         display: block;
         width: 100%;
