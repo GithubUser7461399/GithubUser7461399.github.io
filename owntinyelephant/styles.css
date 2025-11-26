@@ -255,7 +255,7 @@ footer {
     height: 300px;
     border-radius: 25px;
     display: inline-block;
-    margin: 50px;
+    margin: 50px auto;
 }
 
 .gallery-item img {
