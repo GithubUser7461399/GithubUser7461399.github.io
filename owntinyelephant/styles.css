@@ -276,6 +276,8 @@ footer {
 }
 
 .dropbtn {
+    border: none;
+    width: 100%;
     display: flex;
     background-color: #ff0000;
 }
@@ -305,6 +307,11 @@ footer {
     }
 
     .dropbtn:active .Navbar li, .Navbar, .dropbtn {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .dropbtn:hover .Navbar li, .Navbar, .dropbtn {
         display: block;
         width: 100%;
         height: auto;
