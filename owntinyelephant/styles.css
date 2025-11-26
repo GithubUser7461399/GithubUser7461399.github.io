@@ -305,6 +305,11 @@ footer {
         width: 100%;
         height: auto;
     }
+    .dropbtn:active .Navbar li, .Navbar, .dropbtn {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
     .dropbtn:hover {
         background-color: #cc0000;
         transition: 0.3s;
