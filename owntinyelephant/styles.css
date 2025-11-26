@@ -270,6 +270,10 @@ footer {
     transition: 0.3s;
 }
 
+.dropbtn {
+    display: flex;
+}
+
 @media screen and (max-device-width: 700px) {
     /* Code in here only applies to screens equal or less than 500 pixels wide */
     section {
@@ -277,5 +281,23 @@ footer {
     };
     h1 {
         font-size: 18px;
+    }
+    .Navbar li {
+        display: none;
+        margin: 0 auto;
+        height: 0px;
+    }
+    .dropbtn {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        height: 50px;
+    }
+    .dropbtn:hover .Navbar li, .Navbar, .dropbtn {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: #cc0000;
+        transition: 0.3s;
     }
   }
